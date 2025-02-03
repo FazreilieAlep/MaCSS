@@ -7,14 +7,13 @@ import Reels from './pages/Reels';
 
 function Routing() {
   return (
-    <Router>
+    <Router basename="/MaCSS">
       <Routes>
         <Route path="/" element={<MaCSS />} />
-        <Route path="/MaCSS/about" element={<About />} />
-        <Route path="/MaCSS/contact" element={<Contact />} />
-        <Route path="/MaCSS" element={<MaCSS />} />
-        <Route path='/MaCSS/Collections' element={<Collections />} />
-        <Route path='/MaCSS/Reels' element={<Reels />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/Collections" element={<Collections />} />
+        <Route path="/Reels" element={<Reels />} />
       </Routes>
     </Router>
   );
