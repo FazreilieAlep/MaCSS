@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState, forwardRef } from 'react';
 import './Footer.css';
-import { FaLinkedinIn, FaYoutube, FaInstagram } from "react-icons/fa";
-import { RiGithubFill } from "react-icons/ri";
+// import { FaLinkedinIn, FaYoutube, FaInstagram } from "react-icons/fa";
+// import { RiGithubFill } from "react-icons/ri";
 import { motion, useTransform } from "framer-motion";
 
 const Footer = forwardRef((props, ref) => {

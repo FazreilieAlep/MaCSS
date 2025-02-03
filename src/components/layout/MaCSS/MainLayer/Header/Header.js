@@ -1,5 +1,5 @@
 import React, { useCallback, useEffect, useRef, useState, forwardRef } from 'react';
-import { useNavigate } from 'react-router-dom';
+// import { useNavigate } from 'react-router-dom';
 import './Header.css';
 import { motion, useTransform } from "framer-motion";
 
@@ -7,7 +7,7 @@ import { motion, useTransform } from "framer-motion";
 import SkyBackground from '../../../../../assets/images/home/sky.png';
 
 const Header = forwardRef(({ yPos, xPos, scrollY }, ref) => {
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
     const skyBackgroundRef = useRef(null);
     const title = useRef(null);
     const sun = useRef(null);

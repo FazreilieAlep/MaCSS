@@ -1,18 +1,18 @@
-import React, { useEffect, useRef, forwardRef } from 'react';
+import React, { useRef, forwardRef } from 'react';
 import './QuotesMask.css';
 
 // import videoBackground from '../../../../../assets/videos/fantasy-warrior-cherry-blossom-moewalls-com.mp4';
 
 const QuotesMask = forwardRef(({onMouseEnter, onMouseLeave}, ref) => {
-    const videoRef = useRef(null);
+    // const videoRef = useRef(null);
     const content = useRef(null);
 
-    const syncBackgroundHeight = () => {
-        const background = document.querySelector('.background');
-        if (ref.current && background) {
-            background.style.height = `${ref.current.offsetHeight}px`;
-        }
-    };
+    // const syncBackgroundHeight = () => {
+    //     const background = document.querySelector('.background');
+    //     if (ref.current && background) {
+    //         background.style.height = `${ref.current.offsetHeight}px`;
+    //     }
+    // };
 
     // useEffect(() => {
 

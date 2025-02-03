@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef, useState, useCallback } from 'react';
 import './Reels.css';
 
 const Reels = () => {
@@ -22,7 +22,7 @@ const Reels = () => {
         };
     }, []);
 
-    const fetchReelsData = async () => {
+    const fetchReelsData = useCallback(async () => {
         try {
             setLoadingMore(true);
             const response = await fetch('https://mef-3dpm.onrender.com/anime/get_random');
@@ -41,11 +41,11 @@ const Reels = () => {
             setLoading(false);
             setLoadingMore(false);
         }
-    };
+    }, [trackedIds]);
 
     useEffect(() => {
         fetchReelsData();
-    }, []);
+    }, [fetchReelsData]);
 
     useEffect(() => {
         if (observerRef.current) observerRef.current.disconnect();
@@ -70,7 +70,7 @@ const Reels = () => {
         return () => {
             if (observerRef.current) observerRef.current.disconnect();
         };
-    }, [reelsData]);
+    }, [fetchReelsData]);
 
     if (loading) {
         return <div>Loading...</div>;

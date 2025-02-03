@@ -18,10 +18,10 @@ import Footer from '../components/layout/MaCSS/MainLayer/Footer/Footer.js';
 import AboutMeMask from '../components/layout/MaCSS/MaskLayer/AboutMeMask/AboutMeMask.js';
 import AboutSiteMask from '../components/layout/MaCSS/MaskLayer/AboutSiteMask/AboutSiteMask.js';
 import QuotesMask from '../components/layout/MaCSS/MaskLayer/QuoteMask/QuoteMask.js';
-import FooterMask from '../components/layout/MaCSS/MaskLayer/FooterMask/FooterMask.js';
+// import FooterMask from '../components/layout/MaCSS/MaskLayer/FooterMask/FooterMask.js';
 
 import Navbar from '../components/layout/MaCSS/Navbar/Navbar.js';
-import Navbar2 from '../components/layout/MaCSS/Navbar2/Navbar2.js';
+// import Navbar2 from '../components/layout/MaCSS/Navbar2/Navbar2.js';
 
 // Assets import
 import circleMask from '../assets/styles/masks/circle.svg';
@@ -44,13 +44,13 @@ function MaCSS() {
     const maskLayerRef = useRef(null);
 
     // Borders
-    const [mainLayerBorder, setMainLayerBorder] = useState(0);
+    // const [mainLayerBorder, setMainLayerBorder] = useState(0);
     const [headerBorder, setHeaderBorder] = useState(0); 
     const [aboutMeBorder, setAboutMeBorder] = useState(0);
     const [aboutSiteBorder, setAboutSiteBorder] = useState(0);
     const [projectBorder, setProjectBorder] = useState(0);
     const [quoteBorder, setQuoteBorder] = useState(0); 
-    const [footerBorder, setFooterBorder] = useState(0); 
+    // const [footerBorder, setFooterBorder] = useState(0); 
 
     // CURSOR
     const { scrollY, scrollYProgress } = useScroll(); // for framer motion

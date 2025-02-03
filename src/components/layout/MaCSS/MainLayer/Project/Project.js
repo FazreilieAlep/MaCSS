@@ -1,5 +1,5 @@
 // Defaults import
-import React, { useRef, forwardRef } from 'react';
+import React, { forwardRef } from 'react';
 import './Project.css';
 import ProjectCard from '../../Components/ProjectCard/ProjectCard';
 

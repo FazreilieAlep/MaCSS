@@ -1,21 +1,19 @@
-import React, { useEffect, useRef, forwardRef } from 'react';
+import React, { useEffect, useRef, useCallback, forwardRef } from 'react';
 import './Quotes.css';
-
 import videoBackground from '../../../../../assets/videos/fantasy-warrior-cherry-blossom-moewalls-com.mp4';
 
 const Quotes = forwardRef((props, ref) => {
     const videoRef = useRef(null);
     const content = useRef(null);
 
-    const syncBackgroundHeight = () => {
+    const syncBackgroundHeight = useCallback(() => {
         const background = document.querySelector('.background');
         if (ref.current && background) {
             background.style.height = `${ref.current.offsetHeight}px`;
         }
-    };
+    }, [ref]);
 
     useEffect(() => {
-
         syncBackgroundHeight();
         const video = videoRef.current;
         video.playbackRate = 0.5;
@@ -25,7 +23,7 @@ const Quotes = forwardRef((props, ref) => {
         return () => {
             window.removeEventListener('resize', syncBackgroundHeight);
         };
-    }, []);
+    }, [syncBackgroundHeight]);
 
     return (
         <div ref={ref} className='quotes'>
