@@ -1,8 +1,8 @@
-import React, { useEffect, useRef, useState, forwardRef } from 'react';
+import React, { useEffect, useRef, useState, useCallback, forwardRef } from 'react';
 import './Footer.css';
 // import { FaLinkedinIn, FaYoutube, FaInstagram } from "react-icons/fa";
 // import { RiGithubFill } from "react-icons/ri";
-import { motion, useTransform } from "framer-motion";
+import { motion } from "framer-motion";
 
 const Footer = forwardRef((props, ref) => {
     const buttonRef = useRef(null);
@@ -13,7 +13,7 @@ const Footer = forwardRef((props, ref) => {
         window.location.href = '/MaCSS/Reels';
     };
 
-    const handleMouseClick = (event) => {
+    const handleMouseClick = useCallback((event) => {
         if (buttonRef.current) {
             const rect = buttonRef.current.getBoundingClientRect();
             const isWithinButton = (
@@ -26,9 +26,9 @@ const Footer = forwardRef((props, ref) => {
                 handleButtonClick();
             }
         }
-    };
+    }, []);
 
-    const handleMouseMove = (event) => {
+    const handleMouseMove = useCallback((event) => {
         if (buttonRef.current) {
             const rect = buttonRef.current.getBoundingClientRect();
             const isWithinButton = (
@@ -40,7 +40,7 @@ const Footer = forwardRef((props, ref) => {
             setIsHovered(isWithinButton);
             setButtonColor(isWithinButton ? '#ff69b4' : '#fe8aa2');
         }
-    };
+    }, []);
 
     useEffect(() => {
         window.addEventListener('click', handleMouseClick);
@@ -50,7 +50,7 @@ const Footer = forwardRef((props, ref) => {
             window.removeEventListener('click', handleMouseClick);
             window.removeEventListener('mousemove', handleMouseMove);
         };
-    }, []);
+    }, [handleMouseClick, handleMouseMove]);
 
     return (
         <footer ref={ref}>
@@ -92,13 +92,13 @@ const Footer = forwardRef((props, ref) => {
                 <h5>ps: I watched a lot of anime. Click here to see anime I've watched so that we can have a good teatime session later...</h5>
 
                 <motion.button
-                        ref={buttonRef}
-                        style={{ color: buttonColor }}
-                        className='collections-button'
-                        animate={{ scale: isHovered ? 1.1 : 1 }}
-                        whileTap={{ scale: 0.9 }}
-                    >
-                        watched anime list
+                    ref={buttonRef}
+                    style={{ color: buttonColor }}
+                    className='collections-button'
+                    animate={{ scale: isHovered ? 1.1 : 1 }}
+                    whileTap={{ scale: 0.9 }}
+                >
+                    watched anime list
                 </motion.button>
             </div>
 
