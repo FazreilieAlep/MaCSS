@@ -1,8 +1,8 @@
 {
-  "homepage": "https://FazreilieAlep.github.io/MaCSS",
   "name": "macss",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://FazreilieAlep.github.io/MaCSS",
   "dependencies": {
     "@react-hook/mouse-position": "^4.1.0",
     "@reduxjs/toolkit": "^2.2.5",
