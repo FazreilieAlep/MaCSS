@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/MaCSS/static/css/main.3a6f7b4a.css",
+    "main.js": "/MaCSS/static/js/main.1e017620.js",
+    "static/media/fantasy-warrior-cherry-blossom-moewalls-com.mp4": "/MaCSS/static/media/fantasy-warrior-cherry-blossom-moewalls-com.79be3509d0d2de9d9723.mp4",
+    "static/media/7805254-uhd_1440_2560_25fps.mp4": "/MaCSS/static/media/7805254-uhd_1440_2560_25fps.9db2c6630ca2b50c83ec.mp4",
+    "static/media/Untitled.png": "/MaCSS/static/media/Untitled.4969122d24ec1f69f3b1.png",
+    "static/media/cloud 1.png": "/MaCSS/static/media/cloud 1.ef93f6f48e02f98072d4.png",
+    "static/media/land 1.png": "/MaCSS/static/media/land 1.bd5e2b9e5853d7abf764.png",
+    "static/media/mountain 1.png": "/MaCSS/static/media/mountain 1.20315ed6e97cf81cb174.png",
+    "static/media/mountain 2.png": "/MaCSS/static/media/mountain 2.b84071ad1053947a5c22.png",
+    "static/media/KongJapanese-Wy7PA.otf": "/MaCSS/static/media/KongJapanese-Wy7PA.aaf4760be7ab0939ba25.otf",
+    "static/media/EraserDust.ttf": "/MaCSS/static/media/EraserDust.7df8bac05967964c8816.ttf",
+    "static/media/Karasha-z8mYw.otf": "/MaCSS/static/media/Karasha-z8mYw.0941d7fea7bc9689e89d.otf",
+    "static/media/sky.png": "/MaCSS/static/media/sky.f12ed93f1f2a43fd6d50.png",
+    "static/media/pondok.png": "/MaCSS/static/media/pondok.d98610d859d3755cb122.png",
+    "static/media/cloud 2.png": "/MaCSS/static/media/cloud 2.48a67ca9c8cea5a6414f.png",
+    "static/media/Sdasian-WyDon.ttf": "/MaCSS/static/media/Sdasian-WyDon.d1c449ac54b26e709528.ttf",
+    "static/media/SamuraiBlast-8MnyD.otf": "/MaCSS/static/media/SamuraiBlast-8MnyD.1fc7c6ff2c8e9939e680.otf",
+    "static/media/Keshiki-RpYoA.otf": "/MaCSS/static/media/Keshiki-RpYoA.99f5091bed97cd196095.otf",
+    "static/media/JiayouAkira-MAVEY.otf": "/MaCSS/static/media/JiayouAkira-MAVEY.687be12fadddd3846924.otf",
+    "static/media/Kobajeon-w18YP.otf": "/MaCSS/static/media/Kobajeon-w18YP.50b7821805d4888b1419.otf",
+    "static/media/ArigatouGozaimasu-1Gnqg.ttf": "/MaCSS/static/media/ArigatouGozaimasu-1Gnqg.dfade356fa647b0e5023.ttf",
+    "static/media/sakura2.svg": "/MaCSS/static/media/sakura2.b776292c0104544320f6a7b13619bb03.svg",
+    "static/media/sakura.svg": "/MaCSS/static/media/sakura.b9da2235e684acc5e0a71391cd330f42.svg",
+    "index.html": "/MaCSS/index.html",
+    "static/media/cursor-circle.svg": "/MaCSS/static/media/cursor-circle.8bf52a792e49990b1875.svg",
+    "static/media/circle.svg": "/MaCSS/static/media/circle.b98f594c63a200b32edff85153c28b5b.svg",
+    "main.3a6f7b4a.css.map": "/MaCSS/static/css/main.3a6f7b4a.css.map",
+    "main.1e017620.js.map": "/MaCSS/static/js/main.1e017620.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3a6f7b4a.css",
+    "static/js/main.1e017620.js"
+  ]
+}
