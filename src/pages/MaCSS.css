@@ -1,0 +1,204 @@
+/* Page Styles */
+.MaCSS-page {
+    position: relative;
+    width: 100vw;
+    height: auto;
+    background: var(--seasalt);
+}
+
+.progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 0.8vw;
+    background: var(--dark-purple);
+    transform-origin: 0 0;
+    z-index: 100;
+  }
+
+/* Layer Style */
+.main-layer-container, .mask-layer-container {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: auto;
+}
+
+.main-layer-container {
+    z-index: 0;
+    color: var(--seasalt);
+    background-color: var(--mainBackground);
+}
+
+.mask-layer-container {
+    z-index: 1;
+    mask-repeat: no-repeat;
+    mask-position:  50vw 3vh;
+    color: var(--rose-pompadour);
+    background: var(--seasalt);
+    will-change: mask-position, mask-size, mask-image;
+}
+
+/* Layout Styles */
+.header-macss, 
+.aboutme, .aboutme-mask, 
+.aboutsite, .aboutsite-mask,
+.project,
+.quotes, .quotes-mask,
+footer {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutme, .aboutsite, .quotes, .footer {
+    z-index: 50;
+}
+
+.project, .footer {
+    z-index: 2;
+}
+
+.aboutme {
+    background-color: var(--mainBackground);
+}
+
+/* .aboutsite {
+    
+} */
+
+/* .project {
+
+} */
+
+/* .quotes {
+   
+}  */
+
+.main-layer-container .dummy-project-layout {
+    background-color: var(--cerise);
+}
+
+.main-layer-container footer {
+    background-color: var(--dark-purple);
+}
+
+.mask-layer-container footer {
+    color: var(--dark-purple);
+}
+
+
+.dummy-header-layout, .aboutme-mask, .aboutsite-mask, .quotes-mask {
+    cursor: none;
+}
+
+/* Layout Content Styles */
+.content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    max-width: 70vw;
+    padding: 10vw 0 3vw 0;
+}
+
+.background {
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    height: 100% !important;
+    overflow: hidden;
+}
+
+.background video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the video covers the entire container */
+    object-position: 0 0; /*Centers the video within the container */
+    outline: none;
+}
+
+.aboutsite .background video {
+    filter: blur(px);
+}
+
+
+.aboutme .content, .aboutme-mask .content,
+.aboutsite .content, .aboutsite-mask .content,
+.quotes .content, .quotes-mask .content,
+.project .content {
+    min-height: 50vw;
+}
+
+.footer .content, .footer-mask .content {
+    max-height: 40vh;
+}
+
+.aboutme .content, .aboutme-mask .content, .project .content{
+    align-items: center;
+    text-align: center;
+}
+
+.aboutsite .content, .aboutsite-mask .content {
+    align-items: flex-start;
+}
+
+.aboutsite .content, .aboutsite-mask .content {
+    margin-top: 10%;
+}
+
+.quotes .content, .quotes-mask .content {
+    align-items: flex-end;
+    text-align: end;
+}
+
+.footer .background {
+    height: auto;
+}
+
+.filterLayer {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0%;
+    background-color: orange;
+    opacity: 0.1;
+    z-index: 99;
+}
+
+.backgroundFilter {
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+}
+
+.aboutsite .content {
+    z-index: 3;
+}
+
+.aboutsite .backgroundFilter{
+    background-image: linear-gradient(to bottom, var(--mainBackground), rgba(255, 212, 132, 0.25) 10%);
+}
+
+.MaCSS-page .main-layer-container h2 span {
+    color: var(--dark-purple);
+}
+
+.MaCSS-page .main-layer-container .quotes h2 span {
+    color: var(--sunset);
+}
+
+.MaCSS-page h1,
+.MaCSS-page h2,
+.MaCSS-page h3,
+.MaCSS-page h4,
+.MaCSS-page h5,
+.MaCSS-page h6 {
+    text-shadow: rgba(0, 0, 0, 1) 0 2px 3px;
+}

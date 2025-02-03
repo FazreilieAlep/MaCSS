@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap');
+
+:root {
+    --seasalt: #F6FBFC;
+    --rose-pompadour: #F5798F;
+    --cerise: #D94D6D;
+    --mainBackground: #fb7e8e;
+    --eggplant: #61394C;
+    --antiflash-white: #E6EDEE;
+    --non-photo-blue: rgb(156, 223, 236);
+
+    --dark-purple: #471C2Eff;
+    --light-blue: #C0E7EBff;
+    --light-cyan: #D8F1F6ff;
+    --salmon-pink: #F59199ff;
+
+    --sunset: #ffd484;
+
+}
+
+@font-face {
+    font-family: erased;
+    src: url(../styles/fonts/eraser/EraserDust.ttf);
+}
+
+@font-face {
+    font-family: nihon1;
+    src: url('../styles/fonts/j-jiayou-akira-font/JiayouAkira-MAVEY.otf') format('opentype');
+}
+
+@font-face {
+    font-family: nihon2;
+    src: url('../styles/fonts/karasha-font/Karasha-z8mYw.otf') format('opentype');
+}
+
+@font-face {
+    font-family: nihon3;
+    src: url('../styles/fonts/kobajeon-font/Kobajeon-w18YP.otf') format('opentype');
+}
+
+@font-face {
+    font-family: nihon4;
+    src: url('../styles/fonts/kong-japanese-font/KongJapanese-Wy7PA.otf') format('opentype');
+}
+
+@font-face {
+    font-family: nihon5;
+    src: url('../styles/fonts/samurai-blast-font/SamuraiBlast-8MnyD.otf') format('opentype');
+}
+
+@font-face {
+    font-family: nihon6;
+    src: url('../styles/fonts/keshiki-font/Keshiki-RpYoA.otf') format('opentype');
+}
+
+@font-face {
+    font-family: nihon7;
+    src: url(../styles/fonts/sd-asian-font/Sdasian-WyDon.ttf);
+}
+
+@font-face {
+    font-family: nihon8;
+    src: url(../styles/fonts/a-arigatou-gozaimasu-font/ArigatouGozaimasu-1Gnqg.ttf);
+}
+
+.chewy-regular {
+    font-family: "Chewy", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.playwrite-cu-400 {
+    font-family: "Playwrite CU", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }

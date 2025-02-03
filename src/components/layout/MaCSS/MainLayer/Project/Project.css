@@ -1,0 +1,14 @@
+.project-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    margin-bottom: 6vw;
+    gap: 2vw;
+}
+
+.project {
+    cursor: url('../../../../../assets/styles/components/cursor-circle.svg') 16 16, auto !important;
+}

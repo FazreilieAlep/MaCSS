@@ -1,0 +1,48 @@
+.cherry-blossom-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Allow cursor interaction with elements behind */
+  }
+  
+  .leaf {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #fde;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  .cursor-magnet {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 0, 0, 0.5); /* Red color for visual aid */
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999; /* Ensure it's above the leaves */
+  }
+  
+  /* Add animation for leaves falling */
+  @keyframes leaf-fall {
+    0% {
+      transform: translateY(-50px);
+    }
+    100% {
+      transform: translateY(110vh);
+    }
+  }
+  
+  .leaf {
+    animation: leaf-fall linear infinite;
+  }
+  
+  /* Optional: Add hover effect for cursor magnet */
+  .cursor-magnet:hover {
+    background-color: rgba(255, 0, 0, 0.8);
+  }
+  

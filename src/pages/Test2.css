@@ -1,0 +1,91 @@
+/* CONTAINER */
+.test-2-page-container{
+    position: relative;
+    width: 100vw;
+    height: 300vh;
+    /* background-color: aquamarine; */
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+/* .layer-container {
+    position: absolute;
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+} */
+
+.content-container {
+    position: relative;
+    width: 100vw;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* LAYER */
+/* #face {
+    z-index: 0;
+    background-color: chocolate;
+} */
+
+#mask {
+    z-index: 100;
+    mask-repeat: no-repeat;
+    background: var(--seasalt);
+    color: var(--rose-pompadour);
+    will-change: mask-position, mask-size, mask-image;
+    opacity: 100%;
+    /* background-color: crimson; */
+}
+
+
+/* CONTENT / SECTION / PART */
+/* #main {
+    background-color: violet;    
+}
+
+#about1 {
+    background-color: burlywood;  
+}
+
+#about2 {
+    background-color: teal;    
+} */
+
+/* #mask-main {
+    background-color: #ff7300;
+} */
+
+/* Pre-build CSS ELEMENT */
+/* The static helps image responsively resizing the bounding box correctly */ 
+.static {
+    width: 100%;
+    height: auto;
+}
+
+
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.border-face-1 {
+    /* border: thick double var(--eggplant); */
+}
+
+.border-mask-1 {
+    /* border: thick double var(--mainBackground); */
+}
+
+.inlineTable {
+    display: inline-table;
+}

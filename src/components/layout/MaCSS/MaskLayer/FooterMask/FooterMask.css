@@ -1,0 +1,96 @@
+.header-footer-mask, .socmed-footer-mask, .contact-footer-mask, .credit{
+    position: relative;
+    text-decoration: none;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.header-footer-mask{
+    padding: 1rem;
+    grid-area: header;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.socmed-footer-mask{
+    padding: 1rem;
+    grid-area: socmed;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 3vw;
+}
+
+.contact-footer-mask{
+    padding: 1rem;
+    grid-area: contact;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1em;
+}
+
+.credit{
+    padding-top: 1rem;
+    grid-area: credit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer h2 {
+    padding: 0.3rem 0;
+}
+
+footer h3{
+    padding: 0.1rem 0;
+}
+
+footer h4{
+    padding: 0.1rem 0;
+}
+
+footer h6 span{
+    font-size: 1vw;
+}
+
+footer h6 {
+    font-family: nihon1;
+}
+
+.contact-footer-mask div h2 {
+    font-size: 1.2rem;
+}
+
+.socmed-footer-mask div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+}
+
+.socmed-footer-mask div a {
+    font-size: 4vw;
+    color: var(--seasalt);
+}
+
+.header-footer-mask h4{
+    font-family: nihon7;
+    font-size: 4.5vw;
+}
+
+@property --iris-radius {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 0%;
+}
+
+@property --iris-gradient-length {
+    syntax: "<length> | <percentage>";
+    inherits: false;
+    initial-value: 0px;
+}

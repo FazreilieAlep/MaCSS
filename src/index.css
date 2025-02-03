@@ -1,0 +1,73 @@
+html, body{
+  scroll-snap-type: y proximity;
+  height: auto;
+  width: auto;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+
+
+h1, h2, h3, h4, h5, h6, p {
+  position: relative;
+  padding: 0%;
+  margin: 0%;
+  min-width: fit-content;
+  line-height: 1.1em;
+}
+
+p {
+  font-size: 4vw;
+}
+
+h1 {
+  font-family: nihon7;
+  font-size: 7vw;
+}
+
+h2 {
+  font-family: nihon7;
+  font-size: 6vw;
+}
+
+h3 {
+  font-size: 5vw;
+}
+
+h4 {
+  font-family: nihon3;
+  font-size: 4vw;
+}
+
+h5 {
+  font-family: nihon3;
+  font-size: 3vw;
+}
+
+h6 {
+  font-family: nihon3;
+  font-size: 2vw;
+}
+
+
+.hide-scrollbar {
+  -ms-overflow-style: none; /* for Internet Explorer, Edge */
+  scrollbar-width: none; /* for Firefox */
+  overflow-y: scroll;
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
+}
