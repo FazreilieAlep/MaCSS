@@ -118,6 +118,43 @@ const Header = forwardRef(({ yPos, xPos, scrollY }, ref) => {
         }
     }, [sunOpacity, yPos]);
 
+    const handleButtonClick = () => {
+        window.location.href = '/MaCSS/Collections';
+    };
+
+    const [isHovered, setIsHovered] = useState(false);
+    const [buttonColor, setButtonColor] = useState('#fbf1f1');
+    const buttonRef = useRef(null);
+
+    const handleMouseMove = useCallback((event) => {
+        if (buttonRef.current) {
+            const rect = buttonRef.current.getBoundingClientRect();
+            const isWithinButton = (
+                event.clientX >= rect.left &&
+                event.clientX <= rect.right &&
+                event.clientY >= rect.top &&
+                event.clientY <= rect.bottom
+            );
+            setIsHovered(isWithinButton);
+            setButtonColor(isWithinButton ? '#ff69b4' : '#fe8aa2');
+        }
+    }, []);
+
+    const handleMouseClick = useCallback((event) => {
+        if (buttonRef.current) {
+            const rect = buttonRef.current.getBoundingClientRect();
+            const isWithinButton = (
+                event.clientX >= rect.left &&
+                event.clientX <= rect.right &&
+                event.clientY >= rect.top &&
+                event.clientY <= rect.bottom
+            );
+            if (isWithinButton) {
+                handleButtonClick();
+            }
+        }
+    }, []);
+
     useEffect(() => {
         updateSunSize();
         updateSunHeight();
@@ -135,44 +172,7 @@ const Header = forwardRef(({ yPos, xPos, scrollY }, ref) => {
             window.removeEventListener('mousemove', handleMouseMove);
             window.removeEventListener('click', handleMouseClick);
         };
-    }, [updateSunHeight]);
-
-    const handleButtonClick = () => {
-        window.location.href = '/MaCSS/Collections';
-    };
-
-    const [isHovered, setIsHovered] = useState(false);
-    const [buttonColor, setButtonColor] = useState('#fbf1f1');
-    const buttonRef = useRef(null);
-
-    const handleMouseMove = (event) => {
-        if (buttonRef.current) {
-            const rect = buttonRef.current.getBoundingClientRect();
-            const isWithinButton = (
-                event.clientX >= rect.left &&
-                event.clientX <= rect.right &&
-                event.clientY >= rect.top &&
-                event.clientY <= rect.bottom
-            );
-            setIsHovered(isWithinButton);
-            setButtonColor(isWithinButton ? '#ff69b4' : '#fe8aa2');
-        }
-    };
-
-    const handleMouseClick = (event) => {
-        if (buttonRef.current) {
-            const rect = buttonRef.current.getBoundingClientRect();
-            const isWithinButton = (
-                event.clientX >= rect.left &&
-                event.clientX <= rect.right &&
-                event.clientY >= rect.top &&
-                event.clientY <= rect.bottom
-            );
-            if (isWithinButton) {
-                handleButtonClick();
-            }
-        }
-    };
+    }, [updateSunHeight, handleMouseMove, handleMouseClick]);
 
     return (
         <div ref={ref} className='header-macss'>
