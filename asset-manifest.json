@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/MaCSS/static/css/main.0294b615.css",
-    "main.js": "/MaCSS/static/js/main.abb9969e.js",
+    "main.js": "/MaCSS/static/js/main.ecf8f388.js",
     "static/media/fantasy-warrior-cherry-blossom-moewalls-com.mp4": "/MaCSS/static/media/fantasy-warrior-cherry-blossom-moewalls-com.79be3509d0d2de9d9723.mp4",
     "static/media/7805254-uhd_1440_2560_25fps.mp4": "/MaCSS/static/media/7805254-uhd_1440_2560_25fps.9db2c6630ca2b50c83ec.mp4",
     "static/media/Untitled.png": "/MaCSS/static/media/Untitled.4969122d24ec1f69f3b1.png",
@@ -27,10 +27,10 @@
     "static/media/cursor-circle.svg": "/MaCSS/static/media/cursor-circle.8bf52a792e49990b1875.svg",
     "static/media/circle.svg": "/MaCSS/static/media/circle.b98f594c63a200b32edff85153c28b5b.svg",
     "main.0294b615.css.map": "/MaCSS/static/css/main.0294b615.css.map",
-    "main.abb9969e.js.map": "/MaCSS/static/js/main.abb9969e.js.map"
+    "main.ecf8f388.js.map": "/MaCSS/static/js/main.ecf8f388.js.map"
   },
   "entrypoints": [
     "static/css/main.0294b615.css",
-    "static/js/main.abb9969e.js"
+    "static/js/main.ecf8f388.js"
   ]
 }
